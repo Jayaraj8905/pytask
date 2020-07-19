@@ -23,7 +23,7 @@ def download():
 
     # Iterate and construct the data
     for data in parsedData:  
-        writer.writerow([str(data['id']), str(data['president']), data['nm'], data['pp'], data['tm']])
+        writer.writerow([data[0], str(data[1]), data[2], data[3], data[4]])
     
     # Respond the data
     output = make_response(dest.getvalue())
